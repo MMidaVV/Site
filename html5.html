@@ -1,0 +1,44 @@
+<?php
+    $mysqli = new mysqli('127.0.0.1:3306','root','','webshool');
+    if ($mysqli->connect_errno) {
+        echo $mysqli->connect_error;
+        exit;
+    }
+    $result = $mysqli->query("SELECT * FROM `gallery`");
+    if ($mysqli->errno) {
+        echo $mysqli->error;
+        exit;
+    }
+?>
+<html>
+    <head>
+			<link href="https://fonts.googleapis.com/css?family=Rubik:400,900&display=swap&subset=cyrillic" rel="stylesheet">    	
+            <meta charset="utf-8"/>
+            <title>Галерея</title>
+            <link href="Css\css5.css" rel="stylesheet" type="text/css"/>
+            
+    </head>
+    <body background="Img\fon.jpg">
+    	<div class="cherta">     
+            <ul class="spisok">
+                <li class="levo"><div>Галлерея:</div></li>
+                <li class="right_spisok"><div>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="1" href="index.html">Главное меню</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="2" href="html3.html">Профиль</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="3" href="html5.html">Галерея</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="4" href="html6.html">Игра</a>
+
+                </div></li>
+            </ul>
+        </div>
+       
+        <script>
+            function guidance(element){
+                element.setAttribute("class", "guidance");
+            }
+            function noguidance(element){
+                element.setAttribute("class", "noguidance");
+            } 
+        </script>
+    </body>
+</html>

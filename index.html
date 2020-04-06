@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+        <meta charset="utf-8">
+        <title>Главное меню</title>
+        <link href="Css\css.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body background="Img\01.jpg">
+        <div class="cherta">     
+            <ul class="spisok" >
+            <li class="levo"><div class="Mid">Mid</div><div class="aV">aV</div></li>
+                <li class="right_spisok"><div>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="1" href="html2.html">О себе</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="2" href="html3.html">Профиль</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="3" href="html5.php">Галерея</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="4" href="html6.html">Игра</a>
+                </div></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="seredina">
+            <div class="cherta2">
+                <div class="Vadim">
+                    <ul class="vk"><li class="marginvk">Vadim</li class="marginvk"><li>Kurdyk</li></ul>
+                </div>
+                <div class="mb">
+                    Web Designer & Front-end Developer(may be)
+                </div>
+            </div>
+            <ul class="yarluku">
+                <li><a href="https://www.instagram.com/mmidavv/?hl=ru"><img class="znachki" onmouseover="guidance_img(this)" onmouseout="noguidance_img(this)" id="5" src="Img\instagram.png"></a></li>
+                <li><a href="https://vk.com/id266370611"><img onmouseover="guidance_img(this)" onmouseout="noguidance_img(this)" id="6" class="znachki" src="Img\vk.png"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCC8NK5jRyY_aE1z5PCcgd7Q"><img onmouseover="guidance_img(this)" onmouseout="noguidance_img(this)" id="7" class="znachki" src="Img\YouTube.png" ></a></li>
+                <li><a href="https://steamcommunity.com/profiles/76561198212435000/"><img onmouseover="guidance_img(this)" onmouseout="noguidance_img(this)" id="8" class="znachki" src="Img\Steam.png"></a></li>
+            </ul>
+        </div>
+        <script>
+            function guidance(element){
+                element.setAttribute("class", "guidance");
+            }
+            function noguidance(element){
+                element.setAttribute("class", "noguidance");
+            } 
+            function guidance_img(element){
+                element.setAttribute("class", "guidance_img");
+            }
+            function noguidance_img(element){
+                element.setAttribute("class", "noguidance_img");
+            } 
+        </script>
+    </body>
+</html>

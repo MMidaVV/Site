@@ -1,0 +1,160 @@
+.avtorizacia{
+	width: 28.4%;
+	height: 100%;
+	margin-left: 35.8%;
+	margin-right: 35.8%;
+	margin-top: 12%;
+	background: rgba(51, 50, 46, 0.8);
+	border-radius: 25px;
+}
+.verh{
+	width: 100%;
+	height: 50px;
+	background-color: rgba(54, 53, 47, 0.5);
+	border-radius: 25px;
+}
+.slovo{
+	width: 100%;
+	text-align: center;
+	line-height: 45px;
+	font-size: 32pt;
+	font-family: 'Rubik', sans-serif;
+	justify-content: flex-start;
+}
+.avtorizaciya{
+    width: 68.4%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15.8%;
+	margin-right: 15.8%;
+}
+.spisok{
+     list-style-type: none;
+     display: flex;
+     font-family: 'Rubik', sans-serif;
+     padding-left: 0; 
+}
+
+#text-error {
+	color: red;
+}
+.error-border {
+	border: 2px solid red;
+	width: 68.4%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15.8%;
+	margin-right: 15.8%; 
+}
+.success-border{
+	border: 2px solid greenyellow;
+	width: 68.4%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15.8%;
+	margin-right: 15.8%; 
+}
+.t1-error, .t2-error, .t3-error, .t4-error, .t5-error {
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	color: red;s
+}
+.ssilka{
+    color: whitesmoke;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.ssilku{
+	text-align: center;
+	padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.spisok{
+    list-style-type: none;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 0; 
+    margin: 0;
+}
+.strelka{
+	display: flex;
+	width: 25%;
+	
+}
+.ssilka{
+    color: white;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.ssilku{
+	text-align: center;
+	padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+.cherta{
+    border-bottom: 1px solid rgba(173, 170, 170,.2);
+    height: 60px;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.4);;
+}
+.spisok{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25pt; 
+    width: 100%;
+    margin-right: 0;
+    padding-left: 0;
+}
+.spisok, .levo{
+    font-family: 'Rubik', sans-serif;
+    list-style-type: none;
+    color: white;
+    display: flex; 
+}
+.margin{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px; 
+}
+.ssilka{
+    text-decoration: none;
+    color: white;
+}
+.aV{
+    color: #50C7C7;
+}
+.levo{ 
+    justify-content: flex-start; 
+    margin-top: 10px;
+    width: 40%;
+}
+body{
+    margin: 0; 
+}
+.right_spisok{
+    width: 40%;
+    margin-top: 10px;  
+}
+.guidance{
+    color: #50C7C7;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -10px; 
+}
+.noguidance{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -10px; 
+}

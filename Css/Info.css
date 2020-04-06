@@ -1,0 +1,67 @@
+.cherta{
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    height: 50px;
+    width: 100%; 
+}
+.spisok{
+     list-style-type: none;
+     display: flex;
+     font-family: 'Rubik', sans-serif;
+     padding-left: 0; 
+}
+
+.ssilka{
+    text-decoration: none;
+    font-size: 25pt;
+    margin-top: -10px;
+}
+.levo{ 
+	display: flex;
+    font-size: 25pt;
+	color: whitesmoke;
+	justify-content: flex-start;
+	width: 40%;
+	height: 100%;
+	margin-top: -5px;
+
+}
+.margin{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.text{
+	font-size: 25pt;
+	color: whitesmoke;
+	margin-top: 200px;
+	margin-left: 800px;
+}
+p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.Web{
+	font-size: 40pt;
+}
+.pravo{
+	margin-top: -5px;
+	display: flex;
+	height: 100%;
+	width: 56%;
+	justify-content: flex-end;
+
+}
+.guidance{
+    color: #50C7C7;
+    text-decoration: none;
+    font-size: 25pt;
+     
+}
+.noguidance{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 25pt; 
+}
+.color{
+	color: whitesmoke;
+}
+

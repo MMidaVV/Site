@@ -1,0 +1,38 @@
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css?family=Rubik:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+            <meta charset="utf-8"/>
+            <link href="Css/Info.css" rel="stylesheet" >
+            
+    </head>
+    <body background="Img/05.png">
+		<div class="cherta">     
+			<ul class="spisok" >
+		    	<div class="levo"><li class="margin">О себе:</li></div>
+		    	<div class="pravo">
+			        <li><a class="ssilka color margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="1" href="index.html">Главное меню</a></li>
+	                <li><a class="ssilka color margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="2" href="html3.html">Профиль</a></li>
+	                <li><a class="ssilka color margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="3" href="html5.html">Галерея</a></li>
+	                <li><a class="ssilka color margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="4" href="html6.html">Игра</a></li>
+	            </div>
+		   	</ul>
+		</div>
+		<div class="text">
+			<p class="Web">Web-програмист</p>
+			<p>Успешный фрилансер</p>
+			<p>Этими словами я хочю себя описывать в будующем.</p>
+			<p>Меня зовут Вадим. Мне 16 и я учусь в 10 классе.</p>
+			<p>Я занимаюсь хоккеем с мячом и играю в онлайн игры.</p>
+			<p>До прихода на курсы я знал только "Pascal".</p>
+			<p>Кроме этого я не много владею программами Photoshop и VegasPro.</p>
+		</div>
+		<script>
+            function guidance(element){
+                element.setAttribute("class", "guidance margin ssilka ");
+            }
+            function noguidance(element){
+                element.setAttribute("class", "noguidance margin ssilka ");
+            } 
+        </script>
+    </body>
+</html>

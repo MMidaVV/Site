@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    		<link href="https://fonts.googleapis.com/css?family=Rubik:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+            <meta charset="utf-8"/>
+            <title>Профиль</title>
+			<link href="Css\css3.css" rel="stylesheet" type="text/css"/>
+            
+    </head>
+    <body background="Img\devuska.jpg">
+    	<div class="cherta">     
+                        <ul class="spisok" >
+                        <li class="levo"><div class="Mid">Mid</div><div class="aV">aV</div></li>
+                            <li class="right_spisok">
+                                <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="1" href="index.html">Главное меню</a>
+                                <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="2" href="html2.html">О себе</a>
+                                <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="3" href="html5.html">Галерея</a>
+                                <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="4" href="html6.html">Игра</a>
+                            </li>
+                        </ul>
+        </div>
+        <div class="avtorizacia">
+			<form>
+				<div class="verh">
+					<ul class="spisok" >
+						<li div class="slovo">Авторизация</li>
+					</ul>
+				</div>            
+				<input name="login" type="text" class="avtorizaciya" placeholder="login"><Br>
+				<input name="password" type="text" class="avtorizaciya" placeholder="password"><Br>	
+				<input type="submit" class="avtorizaciya" placeholder="Отправить">
+				<div class="ssilku">
+					<div class="ssilka"><a class="ssilka"  href="html4.html">Зарегистрироваться</a><br></div>
+					<div class="ssilka"><a class="ssilka" href="index.html">На главную</a></div>
+				</div>
+			</form>	
+        </div>
+        <script>
+            function guidance(element){
+                element.setAttribute("class", "guidance");
+            }
+            function noguidance(element){
+                element.setAttribute("class", "noguidance");
+            } 
+        </script>	
+    </body>
+</html>

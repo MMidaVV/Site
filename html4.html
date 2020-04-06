@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    		<link href="https://fonts.googleapis.com/css?family=Rubik:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+            <meta charset="utf-8"/>
+            <title>Регистрация</title>
+			<link href="Css\css4.css" rel="stylesheet" type="text/css"/>
+            
+    </head>
+    <body background="Img\devuska.jpg">
+    	<div class="cherta">     
+            <ul class="spisok" >
+                <li class="levo"><div class="Mid">Mid</div><div class="aV">aV</div></li>
+                <li class="right_spisok">
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="1" href="index.html">Главное меню</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="2" href="html2.html">О себе</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="3" href="html5.html">Галерея</a>
+                    <a class="ssilka margin" onmouseover="guidance(this)" onmouseout="noguidance(this)" id="4" href="html6.html">Игра</a>
+                </li>
+            </ul>
+        </div>
+        <div class="avtorizacia">
+			<form method="POST" action="Php\finishRegistration.php">
+				<div class="verh">
+					<ul class="spisok" >
+						
+						<li class="slovo">Регистрация</li>
+					</ul>
+				</div>
+
+				<input onchange="validateT1(this)" name="name" type="text" class="avtorizaciya" placeholder="name"></Br>  
+				<div class="t1-error" id="t1-error"></div>            
+				<input onchange="validateT2(this)" name="login" type="text" class="avtorizaciya" placeholder="login"><Br>
+				<div class="t2-error" id="t2-error"></div>
+				<input onchange="validateT3(this)" name="password" type="text" class="avtorizaciya" placeholder="password"><Br>
+				<div class="t3-error" id="t3-error"></div>	
+				<input onchange="validateT4(this)" name="verificationPassword" type="text" class="avtorizaciya" placeholder="verificationPassword"><Br>
+				<div class="t4-error" id="t4-error"></div>
+				<input onchange="validateT5(this)" name="telephone" type="text" class="avtorizaciya" placeholder="telephone"><Br>        
+				<div class="t5-error" id="t5-error"></div>
+				<input id="button-error" type="submit" class="avtorizaciya" placeholder="Отправить" disabled>
+				<div class="ssilku">
+					<div class="ssilka"><a class="ssilka"  href="html3.html">Авторизироваться</a><br></div>
+					<div class="ssilka"><a class="ssilka" href="index.html">На главную</a></div>
+				</div>
+				<script>
+					let k = 0;
+					function validateT1(element) {
+						let errorBlock = document.getElementById('t1-error');
+						if (element.value.length < 6) {
+							element.className = 'error-border';
+							errorBlock.innerHTML = 'Текст должен быть длинне 6 символов!';
+						} else {
+							element.className = 'success-border';
+							errorBlock.innerHTML = '';
+							k = k+1;
+							if (k == 5){
+								element = document.getElementById('button-error');
+								element.removeAttribute("disabled"); 
+							}
+						}
+					}
+					function validateT2(element) {
+						let errorBlock = document.getElementById('t2-error');
+						if (element.value.length < 6) {
+							element.className = 'error-border';
+							errorBlock.innerHTML = 'Текст должен быть длинне 6 символов!';
+
+						} else {
+							element.className = 'success-border';
+							errorBlock.innerHTML = '';
+							k = k+1;
+							if (k == 5){
+								element = document.getElementById('button-error');
+								element.removeAttribute("disabled"); 
+							}
+						}
+					}
+					function validateT3(element) {
+						let errorBlock = document.getElementById('t3-error');
+						if (element.value.length < 6) {
+							element.className = 'error-border';
+							errorBlock.innerHTML = 'Текст должен быть длинне 6 символов!';
+						} else {
+							element.className = 'success-border';
+							errorBlock.innerHTML = '';
+							k = k+1;
+							if (k == 5){
+								element = document.getElementById('button-error');
+								element.removeAttribute("disabled"); 
+							}
+						}
+					}
+					function validateT4(element) {
+						let errorBlock = document.getElementById('t4-error');
+						if (element.value.length < 6) {
+							element.className = 'error-border';
+							errorBlock.innerHTML = 'Текст должен быть длинне 6 символов!';
+						} else {
+							element.className = 'success-border';
+							errorBlock.innerHTML = '';
+							k = k+1;
+							if (k == 5){
+								element = document.getElementById('button-error');
+								element.removeAttribute("disabled"); 
+							}
+						}
+					}
+					function validateT5(element) {
+						let errorBlock = document.getElementById('t5-error');
+						if (element.value.length != 11) {
+							element.className = 'error-border';
+							errorBlock.innerHTML = 'Номер должен состоять из 11 символов!';
+						} else {
+							element.className = 'success-border';
+							errorBlock.innerHTML = '';
+							k = k+1;
+							if (k == 5){
+								element = document.getElementById('button-error');
+								element.removeAttribute("disabled"); 
+							}
+						}
+					}
+					 function guidance(element){
+                		element.setAttribute("class", "guidance");
+            		}
+            		function noguidance(element){
+                		element.setAttribute("class", "noguidance");
+            		} 
+					
+
+
+					
+				</script>
+				
+
+			</form>	
+        </div>	
+    </body>
+</html>

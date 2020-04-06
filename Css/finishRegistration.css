@@ -1,0 +1,88 @@
+.cherta{
+    border-bottom: 1px solid rgba(173, 170, 170,.2);
+    height: 60px;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.4);;
+}
+.spisok{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25pt; 
+    width: 100%;
+    margin-right: 0;
+    padding-left: 0;
+}
+.spisok, .levo{
+    font-family: 'Rubik', sans-serif;
+    list-style-type: none;
+    color: white;
+    display: flex; 
+}
+.margin{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px; 
+}
+.ssilka{
+    text-decoration: none;
+    color: gray;
+}
+.aV{
+    color: #50C7C7;
+}
+
+.avtorizacia{
+    width: 28.4%;
+    height: 30%;
+    margin-left: 35.8%;
+    margin-right: 35.8%;
+    margin-top: 12%;
+    background: rgba(51, 50, 46, 0.7);
+    border-radius: 25px;
+}
+.verh{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(54, 53, 47, 0.7);
+    border-radius: 25px;
+}
+.slovo{
+    width: 100%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 35pt;
+    font-family: 'Rubik', sans-serif;
+    justify-content: flex-start;
+    color: whitesmoke;
+}
+.avtorizaciya{
+    width: 68.4%;
+    height: 90%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    margin-left: 15.8%;
+    margin-right: 15.8%;
+}
+
+.word{
+    color: white;
+    font-size: 20pt;
+}
+.ssilka{
+    text-decoration: none;
+    color: white;
+}
+.levo{ 
+    justify-content: flex-start; 
+    margin-top: 10px;
+    width: 40%;
+}
+body{
+    margin: 0; 
+}
+.right_spisok{
+    width: 40%;
+    margin-top: 10px;  
+}
